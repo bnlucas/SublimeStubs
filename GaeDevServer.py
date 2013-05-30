@@ -1,5 +1,8 @@
 # Small Sublime Text 2 window command to start the GAE dev server from
 # folder. Called from Side Menu context option.
+#
+# On my local setup, my app directories are stored directly under the GAE directory.
+# C:\google_appengine\myapp
 
 import sublime, sublime_plugin
 
@@ -7,7 +10,7 @@ import os
 
 from threading import Thread
 
-path = 'C:\\nathan\\appengine'
+path = 'C:\\google_appengine\\' # change to GAE SDK directory.
 
 class GaeDevServerCommand(sublime_plugin.WindowCommand):
 
