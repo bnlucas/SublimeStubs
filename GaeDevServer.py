@@ -14,16 +14,14 @@
 # ]
 
 import sublime, sublime_plugin
-
 import os
 
 from threading import Thread
 
-path = 'C:\\google_appengine\\' # change to GAE SDK directory.
-
 class GaeDevServerCommand(sublime_plugin.WindowCommand):
 
 	def run(self, paths=[]):
+		path = 'C:\\google_appengine\\' # change to GAE SDK directory.
 
 		if os.path.dirname(paths[0]) == path:
 			app    = paths[0].replace(''.join([path, os.sep]), '')
