@@ -3,6 +3,15 @@
 #
 # On my local setup, my app directories are stored directly under the GAE directory.
 # C:\google_appengine\myapp
+#
+# Side Bar.sublime-menu file:
+# [
+# 	{ "caption": "-" },
+# 	{
+# 		"caption": "Start GAE Dev Server",
+# 		"command": "gae_dev_server", "args": { "paths": [] }
+# 	}
+# ]
 
 import sublime, sublime_plugin
 
